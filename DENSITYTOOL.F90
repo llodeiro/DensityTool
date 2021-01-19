@@ -12,6 +12,7 @@ PROGRAM DENSITYTOOL
 !###     FSU Jena, Germany      ###!
 !###                            ###!
 !###          Dic/2020          ###!
+!###         Version 0.2        ###!
 !###                            ###!
 !###     READ THE MANUAL :)     ###!
 !###                            ###!
@@ -28,7 +29,7 @@ CHARACTER(4) :: NGA,NGB,NGC
 LOGICAL :: FILE_EXIST,DOPCA,DOPSA,DOPARCHGSPIN,DOCHGCARSPIN,DOCHGCARAVG
 LOGICAL :: DOLDOS,DOLDOSFULL,DOLSDOS,DOLSDOSFULL,DOLDOSMAG,DOLDOSFULLMAG,DOLSDOSMAG,DOLSDOSFULLMAG
 
-WRITE(*,*) 'Welcome to DensityTool v0.1 !' ; WRITE(*,*) 'Created by Lucas Lodeiro and Tomáš Rauch.' ; WRITE(*,*)
+WRITE(*,*) 'Welcome to DensityTool v0.2 !' ; WRITE(*,*) 'Created by Lucas Lodeiro and Tomáš Rauch.' ; WRITE(*,*)
 WRITE(*,*) 'About questions, suggestions or errors within the program or the manual:'
 WRITE(*,*) 'lucas.lodeiro@ug.uchile.cl' ; WRITE(*,*) 'tomas.rauch@uni-jena.de' ; WRITE(*,*) ; WRITE(*,*)
 WRITE(*,*) 'Enter SIGMA value in eV, for gaussian broadening (0.02 Ry = 0.272113961 eV):'
