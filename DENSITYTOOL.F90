@@ -1197,6 +1197,8 @@ ENDIF
 
 CALL CPU_TIME(FINISH)
 
+WRITE(*,*) 'Please cite the following article:'; WRITE(*,*)
+
 WRITE(*,*) 'Normal termination of DensityTool.'
 WRITE(*,*) 'Job starts at : ',TRIM(DATE)
 WRITE(*,*) 'Job Time = ',FINISH-START,' seconds.'
