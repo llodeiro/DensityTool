@@ -31,7 +31,9 @@ LOGICAL :: DOLDOS,DOLDOSFULL,DOLSDOS,DOLSDOSFULL,DOLDOSMAG,DOLDOSFULLMAG,DOLSDOS
 
 WRITE(*,*) 'Welcome to DensityTool v0.2 !' ; WRITE(*,*) 'Created by Lucas Lodeiro and Tomáš Rauch.' ; WRITE(*,*)
 WRITE(*,*) 'About questions, suggestions or errors within the program or the manual:'
-WRITE(*,*) 'lucas.lodeiro@ug.uchile.cl' ; WRITE(*,*) 'tomas.rauch@uni-jena.de' ; WRITE(*,*) ; WRITE(*,*)
+WRITE(*,*) 'lucas.lodeiro@ug.uchile.cl' ; WRITE(*,*) 'tomas.rauch@uni-jena.de' ; WRITE(*,*)
+WRITE(*,*) 'The FORTRAN code, input parameter file, manual and application examples can be'
+WRITE(*,*) 'found at:  https://github.com/llodeiro/DensityTool' ; WRITE(*,*) ; WRITE(*,*)
 WRITE(*,*) 'Enter SIGMA value in eV, for gaussian broadening (0.02 Ry = 0.272113961 eV):'
 READ(*,*) SIGMA ; WRITE(*,*)
 WRITE(*,*) 'Enter EMIN value in eV, minimum energy grid value to computate local functions' ; WRITE(*,*) '(EMAX > EMIN):'
