@@ -444,7 +444,7 @@ WRITE(*,*) 'LSDOSFULL is not activated. Full LSDOS in collinear non-magnetic cas
 WRITE(*,*) 'sense... The spin density is zero everywhere by definition. :P' ; WRITE(*,*) ; WRITE(*,*) 
 
 ELSEIF ((DOLSDOSFULL).AND.(SPINCASE .EQ. 2)) THEN
-WRITE(*,*) 'LSDOSFULL activated, computing full LSDOS in collineal magnetic case.'
+WRITE(*,*) 'LSDOSFULL activated, computing full LSDOS in collinear magnetic case.'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
 WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
@@ -601,7 +601,7 @@ ELSEIF ((DOPARCHGSPIN).AND.(SPINCASE .EQ. 3)) THEN
 WRITE(*,*) 'PARCHGSPIN is not activated. PARCHGSPIN in non-collinear case is not posible,'
 WRITE(*,*) 'due to the spin polarization is not well defined, the spinors are no longer'
 WRITE(*,*) 'spin-wavefunctions, i.e. pure Alpha or Beta spin functions. The magnetization'
-WRITE(*,*) 'is not projected over the z direction.' ; WRITE(*,*) ; WRITE(*,*) 
+WRITE(*,*) 'is not projected on the z direction.' ; WRITE(*,*) ; WRITE(*,*) 
 ENDIF
 
 IF ((DOCHGCARSPIN).AND.(SPINCASE .EQ. 1)) THEN
@@ -695,7 +695,7 @@ ELSE IF ((DOCHGCARSPIN).AND.(SPINCASE .EQ. 3)) THEN
 WRITE(*,*) 'CHGCARSPIN is not activated. CHGCARSPIN in non-collinear case is not posible,'
 WRITE(*,*) 'due to the spin polarization is not well defined, the spinors are no longer'
 WRITE(*,*) 'spin-wavefunctions, i.e. no pure Alpha or Beta spin functions. The spin is'
-WRITE(*,*) 'not projected over the z direction.' ; WRITE(*,*) ; WRITE(*,*) 
+WRITE(*,*) 'not projected on the z direction.' ; WRITE(*,*) ; WRITE(*,*) 
 ENDIF
 
 IF (DOCHGCARAVG) THEN
