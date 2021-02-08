@@ -1,1 +1,7 @@
+This folder contains some examples.
 
+C_cubic: 
+Diamond in a simple cubic cell. To keep the amount of data low, 
+only single k-point was included. For test purposes only.
+First, PCA is calculated and then LDOS for a set of 50 energies.
+SOC was included, so SPINCASE = 3 in DENSITYTOOL.IN
