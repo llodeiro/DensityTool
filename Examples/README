@@ -5,3 +5,27 @@ Diamond in a simple cubic cell. To keep the amount of data low,
 only single k-point was included. For test purposes only.
 First, PCA is calculated and then LDOS for a set of 50 energies.
 SOC was included, so SPINCASE = 3 in DENSITYTOOL.IN
+
+Ni_fcc:
+Ni in a fcc cell. To obtained the self-consistent charge
+density, input files from the VASP wiki
+https://www.vasp.at/wiki/index.php/Fcc_Ni_(revisited)
+were used. The electronic structure was then recalculated
+non-selfconsistently on a 4x4x4 k-point mesh to reduce 
+the amount of data.
+ISPIN=2, so SPINCASE = 2 was used in this example.
+1) PCA folder: Results of the simpler PCA / PSA method,
+which clearly fails here, as the spin-polarized energies
+are strongly split close to the Fermi energy. 
+PCA and PSA was calculated, followed by LDOS and LSDOS
+for 100 energy values.
+Note that the results in ldos.png and lsdos.png strongly 
+disagree with ldosmag.png and lsdosmag.png (in the PARCHG folder),
+respectively.
+2) PARCHG folder: Results of the PARCHGSPIN method where
+spin-up and spin-down energies are treated directly.
+PARCHGSPIN was calculated first. Then we calculated
+LDOSMAG and LSDOSMAG. Finally, CHGCARSPIN and CHGCARAVG
+was also calculated.
+Note that the resultin LDOS (ldosmag.png) and LSDOS (lsdosmag.png)
+agree well with the DOS figure from the VASP wiki.
