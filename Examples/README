@@ -27,5 +27,5 @@ spin-up and spin-down energies are treated directly.
 PARCHGSPIN was calculated first. Then we calculated
 LDOSMAG and LSDOSMAG. Finally, CHGCARSPIN and CHGCARAVG
 was also calculated.
-Note that the resultin LDOS (ldosmag.png) and LSDOS (lsdosmag.png)
+Note that the result in LDOS (ldosmag.png) and LSDOS (lsdosmag.png)
 agree well with the DOS figure from the VASP wiki.
