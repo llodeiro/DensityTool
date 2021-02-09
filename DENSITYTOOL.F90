@@ -222,7 +222,7 @@ WRITE(*,*) 'PSA is not activated. PSA in collinear non-magnetic case has no sens
 WRITE(*,*) 'spin density is zero everywhere by definition. :P' ; WRITE(*,*) ; WRITE(*,*) 
 
 ELSEIF ((DOPSA).AND.(SPINCASE .EQ. 2)) THEN
-WRITE(*,*) 'PSA activated, doing PSA in collineal magnetic case.'
+WRITE(*,*) 'PSA activated, doing PSA in collinear magnetic case.'
 ALLOCATE(PARCHGDATA(NG1,NG2,NG3))
 DO K=1,NKP
   DO J=1,NBANDS
