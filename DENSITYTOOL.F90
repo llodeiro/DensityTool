@@ -1,7 +1,7 @@
 PROGRAM DENSITYTOOL
 !###                            ###!
 !###       Lucas Lodeiro        ###!
-!###  Departament of Chemistry  ###!
+!###  Departamento de Química   ###!
 !### Lucas.Lodeiro@ug.uchile.cl ###!
 !###   Universidad de Chile     ###!
 !###                            ###!
