@@ -153,7 +153,7 @@ ENDDO
 READ(12,*) NG1,NG2,NG3
 CLOSE(12)
 VOLUME=(ALAT**3)*(ANGTOA0**3)*ABS(L3(1)*(L1(2)*L2(3)-L1(3)*L2(2))+L3(2)*(L1(3)*L2(1)-L1(1)*L2(3))+L3(3)*(L1(1)*L2(2)-L1(2)*L2(1)))
-WRITE(*,*) 'VOLUME = ', VOLUME, 'bohr³'
+WRITE(*,*) 'Volume = ', VOLUME, 'bohr³'
 DEALLOCATE(L1,L2,L3)
 WRITE(NGA,'(I4)') NG1 ; WRITE(NGB,'(I4)') NG2 ; WRITE(NGC,'(I4)') NG3
 NGS=' '//TRIM(NGA)//' '//TRIM(NGB)//' '//TRIM(NGC)
@@ -290,7 +290,7 @@ ENDIF
 IF (DOLDOS) THEN
 WRITE(*,*) 'LDOS activated.'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 SELECT CASE (DIRECTION)
@@ -340,7 +340,7 @@ WRITE(*,*) 'The spin density is zero everywhere by definition. :P' ; WRITE(*,*) 
 ELSEIF ((DOLSDOS).AND.(SPINCASE .EQ. 2)) THEN
 WRITE(*,*) 'LSDOS activated, computing LSDOS in collinear magnetic case.'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 SELECT CASE (DIRECTION)
@@ -392,7 +392,7 @@ ENDIF
 IF (DOLDOSFULL) THEN
 WRITE(*,*) 'LDOSFULL activated, computing full LDOS'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 ALLOCATE(PARCHGDATA2(NG1,NG2,NG3))
@@ -446,7 +446,7 @@ WRITE(*,*) 'sense... The spin density is zero everywhere by definition. :P' ; WR
 ELSEIF ((DOLSDOSFULL).AND.(SPINCASE .EQ. 2)) THEN
 WRITE(*,*) 'LSDOSFULL activated, computing full LSDOS in collinear magnetic case.'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 ALLOCATE(PARCHGDATA2(NG1,NG2,NG3))
@@ -935,7 +935,7 @@ WRITE(*,*) 'LDOSMAG is not activated. LDOSMAG subroutine is only for SPINCASE = 
 ELSEIF ((DOLDOSMAG).AND.(SPINCASE .EQ. 2)) THEN
 WRITE(*,*) 'LDOSMAG activated'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 SELECT CASE (DIRECTION)
@@ -998,7 +998,7 @@ WRITE(*,*) 'LSDOSMAG is not activated. LSDOSMAG subroutine is only for SPINCASE 
 ELSEIF ((DOLSDOSMAG).AND.(SPINCASE .EQ. 2)) THEN
 WRITE(*,*) 'LSDOSMAG activated, computing LSDOSMAG in collinear magnetic case.'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 SELECT CASE (DIRECTION)
@@ -1061,7 +1061,7 @@ WRITE(*,*) 'LDOSFULLMAG is not activated. LDOSFULLMAG subroutine is only for SPI
 ELSEIF ((DOLDOSFULLMAG).AND.(SPINCASE .EQ. 2)) THEN
 WRITE(*,*) 'LDOSFULLMAG activated'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 ALLOCATE(PARCHGDATA2(NG1,NG2,NG3))
@@ -1131,7 +1131,7 @@ WRITE(*,*) 'LSDOSFULLMAG is not activated. LSDOSFULLMAG subroutine is only for S
 ELSEIF ((DOLSDOSFULLMAG).AND.(SPINCASE .EQ. 2)) THEN
 WRITE(*,*) 'LSDOSFULLMAG activated, computing full LSDOS in collinear magnetic case.'
 DE=(EMAX-EMIN)/NEN ; ETHRCUTOFF=ETHR/(SIGMA*SQRT(2*PI))
-WRITE(*,*) 'Threshold Cutoff=', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
+WRITE(*,*) 'Threshold Cutoff =', ETHRCUTOFF ; WRITE(*,*) 'Format: Reading "file name"'
 WRITE(*,*) '        "Smearing value", "Eigen-energy", "Energy"'
 WRITE(*,*) '        Is smearing value > Threshold Cutoff? YES or NO (not printed)'
 ALLOCATE(PARCHGDATA2(NG1,NG2,NG3))
