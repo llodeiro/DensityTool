@@ -37,4 +37,6 @@ structure calculated with the LMBJ XC potential and described in
 [add citation when published].
 For the example, only the in-plane averaged data is supplied
 (PARCHG.nnnn.kkkk.ALPHA.R3) and LDOS is calculated with LDOSMAG 
-treating the spin-up and spin-down energies exactly.
+treating the spin-up and spin-down energies exactly. Note that
+only the head of CHGCAR is provided, since the actual data is
+not necessary in the current example.
