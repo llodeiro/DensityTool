@@ -2,7 +2,7 @@
 8.0     !#Enter EMIN value in eV
 15.0    !#Enter EMAX value in eV
 50 	    !#Enter NEN value (Integer)
-0.001	!#Enter ETHR value in eV
+0.001	!#Enter ETHR value
 3		!#Enter SPINCASE value (1,2 or 3)
 3		!#Enter DIRECTION value (1,2,3)
 T		!#Enter DOPCA logical value (T or F)
