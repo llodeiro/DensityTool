@@ -33,7 +33,23 @@ WRITE(*,*) 'Welcome to DensityTool v0.2 !' ; WRITE(*,*) 'Created by Lucas Lodeir
 WRITE(*,*) 'About questions, suggestions or errors within the program or the manual:'
 WRITE(*,*) 'lucas.lodeiro@ug.uchile.cl' ; WRITE(*,*) 'tomas.rauch@uni-jena.de' ; WRITE(*,*)
 WRITE(*,*) 'The FORTRAN code, input parameter file, manual and application examples can be'
-WRITE(*,*) 'found at:  https://github.com/llodeiro/DensityTool' ; WRITE(*,*) ; WRITE(*,*)
+WRITE(*,*) 'found at:  https://github.com/llodeiro/DensityTool' ; WRITE(*,*)
+WRITE(*,*) 'MIT License' ; WRITE(*,*) 'Copyright (c) 2021 llodeiro' ; WRITE(*,*)
+WRITE(*,*) 'Permission is hereby granted, free of charge, to any person obtaining a copy'
+WRITE(*,*) 'of this software and associated documentation files (the "Software"), to deal'
+WRITE(*,*) 'in the Software without restriction, including without limitation the rights'
+WRITE(*,*) 'to use, copy, modify, merge, publish, distribute, sublicense, and/or sell'
+WRITE(*,*) 'copies of the Software, and to permit persons to whom the Software is'
+WRITE(*,*) 'furnished to do so, subject to the following conditions:' ; WRITE(*,*) 
+WRITE(*,*) 'The above copyright notice and this permission notice shall be included in all'
+WRITE(*,*) 'copies or substantial portions of the Software.' ; WRITE(*,*)
+WRITE(*,*) 'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR'
+WRITE(*,*) 'IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,'
+WRITE(*,*) 'FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE'
+WRITE(*,*) 'AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER'
+WRITE(*,*) 'LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,'
+WRITE(*,*) 'OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE'
+WRITE(*,*) 'SOFTWARE.' ; WRITE(*,*) ; WRITE(*,*)
 WRITE(*,*) 'Enter SIGMA value in eV, for gaussian broadening (0.02 Ry = 0.272113961 eV):'
 READ(*,*) SIGMA ; WRITE(*,*)
 WRITE(*,*) 'Enter EMIN value in eV, minimum energy grid value to computate local functions' ; WRITE(*,*) '(EMAX > EMIN):'
@@ -140,7 +156,7 @@ IF (SPINCASE .EQ. 2) THEN
 ELSE 
   EN(:,:)=ENERGY(:,:,1)
 ENDIF
-WRITE(*,*) ; WRITE(*,*) 
+DEALLOCATE(M2) ; WRITE(*,*) ; WRITE(*,*) 
 
 ALLOCATE(L1(3),L2(3),L3(3))
 OPEN(12,FILE='CHGCAR',FORM='FORMATTED',STATUS='OLD',ACTION='READ',IOSTAT=OPEN_ERROR)
