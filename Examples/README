@@ -46,7 +46,6 @@ CH3NH3PbI3, also known as MAPI, perovskite (2x2)x6 slab models for
 (001) MAI- and PbI2-terminated surfaces. Structures from ACS Omega
 2020, 5, 45, 29477–29491. Elcetronic structure computed with HSE06
 hybrid functional and SOC.
-
 For the example, only the in-plane averaged data is supplied
 (PARCHG.nnnn.kkkk.R3) and LDOS is calculated with LDOS routine in
 the SPINCASE=3. Note that only the head of CHGCAR is provided, since
