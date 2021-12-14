@@ -50,3 +50,6 @@ For the example, only the in-plane averaged data is supplied
 (PARCHG.nnnn.0001.R3) and LDOS is calculated with LDOS routine in
 the SPINCASE=3. Note that only the head of CHGCAR is provided, since
 the actual data is not necessary in the current example.
+The data plotted was the LDOS.R3.all.dat file, which was created as
+a compilation of individual information by means of:
+cat LDOS.R3.0*.dat > LDOS.R3.all.dat
