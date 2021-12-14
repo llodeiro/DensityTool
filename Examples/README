@@ -34,7 +34,7 @@ Si_F6:
 Hydrogenated Si with adsorbed F6 molecule. Structure from 
 H. Wang et al., Adv. Electr. Mater. 5, 1800891 (2019). Electronic
 structure calculated with the LMBJ XC potential and described in
-[add citation when published].
+T. Rauch et al., JCTC 17, 4746 (2021).
 For the example, only the in-plane averaged data is supplied
 (PARCHG.nnnn.kkkk.ALPHA.R3) and LDOS is calculated with LDOSMAG 
 treating the spin-up and spin-down energies exactly. Note that
