@@ -7,7 +7,7 @@ Ni          = 			# Number of points along r_i
 Lbox        = 		 	# Box length along r_i
 Eminplotted = 			# Minimum energy range of computed LDOS (EMIN)
 Emaxplotted =			# Maximum energy range of computed LDOS (EMAX)
-Eshift      = 			# Energy shift, added to energies
+Eshift      = 			# Energy shift, added to energies (typically the Fermi energy)
 
 ### FIGURE VARIABLES
 cm = "hot"				# Coloring type
