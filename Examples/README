@@ -20,9 +20,9 @@ are strongly split close to the Fermi energy.
 PCA and PSA was calculated, followed by LDOS and LSDOS
 for 100 energy values.
 Note that the results in ldos.png and lsdos.png strongly 
-disagree with ldosmag.png and lsdosmag.png (in the PARCHG folder),
-respectively.
-2) PARCHG folder: Results of the PARCHGSPIN method where
+disagree with ldosmag.png and lsdosmag.png (in the PARCHGSPIN
+folder), respectively.
+2) PARCHGSPIN folder: Results of the PARCHGSPIN method where
 spin-up and spin-down energies are treated directly.
 PARCHGSPIN was calculated first. Then we calculated
 LDOSMAG and LSDOSMAG. Finally, CHGCARSPIN and CHGCARAVG
