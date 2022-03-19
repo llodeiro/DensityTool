@@ -20,14 +20,12 @@ vmin = 				# Minimum of color scale
 vmax = -vmin		# Maximum of color scale
 ymin = 				# Y axis minimum
 ymax = 				# Y axis maximum
-xmin = 				# X axis minimum
-xmax = 				# X axis maximum
+xmin = 0.0			# X axis minimum
+xmax = Lbox			# X axis maximum
 
 z = np.loadtxt('LSDOS.R3.all.dat') 
 #########################################
-for i in range(len(z[:,2])):
-    z[i,2] = max(z[i,2],0.000000001)
-to_plot = np.log(z[:,2])
+to_plot = z[:,2]
 large = z.shape[0]			
 nE    = large/Ni			
 RVminEplotted = Eminplotted+Eshift
