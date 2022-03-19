@@ -1,0 +1,20 @@
+0.10		!\#Enter SIGMA value in eV 
+0.70     	!\#Enter EMIN value in eV 
+7.30    	!\#Enter EMAX value in eV 
+660		!\#Enter NEN value (Integer) 
+0.001		!\#Enter ETHR value 
+1		!\#Enter SPINCASE value (1,2 or 3) 
+3		!\#Enter DIRECTION value (1,2 or 3) 
+F		!\#Enter DOPCA logical value (T or F) 
+F		!\#Enter DOPSA logical value (T or F) 
+T		!\#Enter DOLDOS logical value (T or F) 
+F		!\#Enter DOLDOSFULL logical value (T or F) 
+F		!\#Enter DOLSDOS logical value (T or F) 
+F		!\#Enter DOLSDOSFULL logical value (T or F) 
+F		!\#Enter DOPARCHGSPIN logical value (T or F)
+F		!\#Enter DOCHGCARSPIN logical value (T or F) 
+F		!\#Enter DOCHGCARAVG logical value (T or F) 
+F		!\#Enter DOLDOSMAG logical value (T or F) 
+F		!\#Enter DOLDOSFULLMAG logical value (T or F) 
+F		!\#Enter DOLSDOSMAG logical value (T or F)
+F		!\#Enter DOLSDOSFULLMAG logical value (T or F)
