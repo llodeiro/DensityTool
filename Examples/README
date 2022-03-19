@@ -79,7 +79,12 @@ Ca_2N:
 Ca_2N layered electride. The geometry was obtained from Materials
 Project (see CIF: Conventional Standard): 
 https://materialsproject.org/materials/mp-2686/#
-We use a minimal INCAR file, with ENCUT = 600 eV, ISPIN = 1 (so 
+We use a minimal INCAR file to obtained the self-consistent charge
+density and electronic structure, with ENCUT = 600 eV, ISPIN = 1 (so 
 SPINCASE = 1) and a 13x13x1 Gamma centered k-point grid.
-
+For the example, only the in-plane averaged data is supplied
+(PARCHG.nnnn.kkkk.R3) and LDOS is calculated with LDOS routine. 
+The data plotted was the LDOS.R3.all.dat file, which was created as
+a compilation of individual LDOS data by means of:
+cat LDOS.R3.0*.dat > LDOS.R3.all.dat
 
