@@ -80,6 +80,6 @@ Ca_2N layered electride. The geometry was obtained from Materials
 Project (see CIF: Conventional Standard): 
 https://materialsproject.org/materials/mp-2686/#
 We use a minimal INCAR file, with ENCUT = 600 eV, ISPIN = 1 (so 
-SPINCASE = 1) and a 13x13x1 Gamma centered kpoint grid.
+SPINCASE = 1) and a 13x13x1 Gamma centered k-point grid.
 
 
