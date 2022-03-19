@@ -13,7 +13,7 @@ https://www.vasp.at/wiki/index.php/Fcc_Ni_(revisited)
 were used. The electronic structure was then recalculated
 non-selfconsistently on a 4x4x4 k-point mesh to reduce 
 the amount of data.
-ISPIN=2, so SPINCASE = 2 was used in this example.
+ISPIN = 2, so SPINCASE = 2 was used in this example.
 1) PCA folder: Results of the simpler PCA / PSA method,
 which clearly fails here, as the spin-polarized energies
 are strongly split close to the Fermi energy. 
@@ -29,6 +29,27 @@ LDOSMAG and LSDOSMAG. Finally, CHGCARSPIN and CHGCARAVG
 was also calculated.
 Note that the result in LDOS (ldosmag.png) and LSDOS (lsdosmag.png)
 agree well with the DOS figure from the VASP wiki.
+
+NiO_AFM:
+NiO in antiferromagnetic (AFM) state. To obtained the self-consistent
+charge density and electronic structure, input files from the VASP
+wiki https://www.vasp.at/wiki/index.php/NiO were used. 
+ISPIN = 2, so SPINCASE = 2 was used in this example.
+1) PCA folder: Results of the simpler PCA / PSA method, in this case
+the approximation is exact, as the spin-polarized energies are not 
+split for any level, due to the AFM state. 
+PCA and PSA was calculated, followed by LDOS and LSDOS for 240 energy
+values.
+Note that the results in ldos.png and lsdos.png agree perfectly with
+ldosmag.png and lsdosmag.png (in the PARCHGSPIN folder), respectively.
+2) PARCHGSPIN folder: Results of the PARCHGSPIN method where
+spin-up and spin-down energies are treated directly.
+PARCHGSPIN was calculated first. Then we calculated
+LDOSMAG and LSDOSMAG. Finally, CHGCARSPIN and CHGCARAVG
+was also calculated.
+Note that the result in LDOS (ldosmag.png) and LSDOS (lsdosmag.png)
+agree perfectly with the PCA / PSA ones.
+Also both agree well with the DOS figure from the VASP wiki.
 
 Si_F6:
 Hydrogenated Si with adsorbed F6 molecule. Structure from 
@@ -53,3 +74,12 @@ the actual data is not necessary in the current example.
 The data plotted was the LDOS.R3.all.dat file, which was created as
 a compilation of individual LDOS data by means of:
 cat LDOS.R3.0*.dat > LDOS.R3.all.dat
+
+Ca_2N:
+Ca_2N layered electride. The geometry was obtained from Materials
+Project (see CIF: Conventional Standard): 
+https://materialsproject.org/materials/mp-2686/#
+We use a minimal INCAR file, with ENCUT = 600 eV, ISPIN = 1 (so 
+SPINCASE = 1) and a 13x13x1 Gamma centered kpoint grid.
+
+
