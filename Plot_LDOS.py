@@ -20,8 +20,8 @@ vmin = 				# Minimum of color scale
 vmax = 				# Maximum of color scale
 ymin = 				# Y axis minimum
 ymax = 				# Y axis maximum
-xmin = 				# X axis minimum
-xmax = 				# X axis maximum
+xmin = 0.0			# X axis minimum
+xmax = Lbox			# X axis maximum
 
 z = np.loadtxt('LDOS.R3.all.dat') 
 #########################################
