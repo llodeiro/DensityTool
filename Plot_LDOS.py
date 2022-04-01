@@ -41,5 +41,6 @@ cbar.ax.set_yticklabels([vmin,vmax],size=21)
 cbar.ax.set_ylabel(r"$\log(LDOS)$", rotation=270,size=21)
 ax.set_ylim(ymin,ymax)
 ax.set_xlim(xmin,xmax)
+fig.tight_layout()
+fig.savefig("fig.png")
 plt.show()
-
