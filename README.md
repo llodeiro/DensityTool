@@ -7,6 +7,11 @@ lucas.lodeiro@ug.uchile.cl
 
 tomas.rauch@uni-jena.de
 
+If you use the code, please cite:
+L. Lodeiro and T. Rauch: DensityTool: A post-processing tool for space- and spin-resolved
+density of states from VASP, Computer Physics Communications 277, 108384 (2022),
+https://doi.org/10.1016/j.cpc.2022.108384
+
 
 
 ### Description of files / folders:
