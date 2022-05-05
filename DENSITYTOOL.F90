@@ -1236,10 +1236,9 @@ ENDIF
 
 CALL CPU_TIME(FINISH)
 
-WRITE(*,*) 'Please cite the following article:' WRITE(*,*)
-WRITE(*,*) 'L. Lodeiro and T. Rauch,' WRITE(*,*)
-WRITE(*,*) 'Computer Physics Communications 277, 108384 (2022)' WRITE(*,*)
-WRITE(*,*) 'https://doi.org/10.1016/j.cpc.2022.108384' WRITE(*,*)
+WRITE(*,*) 'Please cite the following article:' ; WRITE(*,*)
+WRITE(*,*) 'L. Lodeiro and T. Rauch,' ; WRITE(*,*) 'Computer Physics Communications 277, 108384 (2022)'
+WRITE(*,*) 'https://doi.org/10.1016/j.cpc.2022.108384' ; WRITE(*,*)
 
 WRITE(*,*) 'Normal termination of DensityTool.'
 WRITE(*,*) 'Job starts at : ',TRIM(DATE)
