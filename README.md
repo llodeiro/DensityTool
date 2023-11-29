@@ -37,6 +37,7 @@ ifort -O2 -o DENSITYTOOL.X DENSITYTOOL.F90
 or
 gfortran -O3 -o DENSITYTOOL.X DENSITYTOOL.F90
 
+CAUTION: Users report some compilation problems when ifort (v=18.0.1 and v=19.0.9.326) is used. We encourage to use gfortran (v=7.5.0 , v=8.2.0 , v=12.2.0 and other versions) to compile DENSITYTOOL. If you need/want to enforce the use of ifort compiler, you can fix the compilation problem using the following command (as eihernan suggest, thanks!), but LOOSING the program feature of INFORMS IN WHICH FILE is the problem, in case of file reading and writing problems: sed -i -e '/IF (OPEN_ERROR > 0) STOP/s/STOP .*/STOP "An IO error occurred."/' DENSITYTOOL.F90
 
 
 ### Execution
